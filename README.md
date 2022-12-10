@@ -1,1 +1,1 @@
-# algo-trading-homework
+# Algorithmic Trading
