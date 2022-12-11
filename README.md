@@ -7,16 +7,17 @@ The exericse seeks to improve the existing algorithmic trading systems by enhanc
 ### Current algorithm trading system
 
 
-
-![](./diagram/baseline.png)
+<img src="./diagram/baseline.png" alt="drawing" width="550" height = "320"/>
 
 ### Optimising the trading algorithm
 
-![](./diagram/diff_training_size.png)
+<img src="./diagram/diff_training_size.png" alt="drawing" width="450" height = "280"/>
 
-![](./diagram/best_improved.png)
+<img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
+
 
 ### A new machine learning model
 
+<img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
 
 ### Recommendation
