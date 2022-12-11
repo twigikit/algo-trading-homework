@@ -11,9 +11,11 @@ The exericse seeks to improve the existing algorithmic trading systems by enhanc
 
 ### Optimising the trading algorithm
 
-<img src="./diagram/diff_training_size.png" alt="drawing" width="450" height = "280"/>
+<img src="./diagram/diff_training_size.png" alt="drawing" width="550" height = "300"/>
 
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
+
+
 
 
 ### A new machine learning model
