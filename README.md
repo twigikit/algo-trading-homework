@@ -1,13 +1,13 @@
 # Machine Learning Trading Bot
 
-The exericse seeks to improve the existing algorithmic trading systems by enhancing the trading signals with machine learning algorithms that can adapt to new data. The improved algorithm will enhance the speed and our ability to automatically trade assets in a highly dynamic environment and give us a competitve advantage early on. 
+The exericse seeks to improve the existing algorithmic trading systems by enhancing the trading signals with machine learning algorithms that can adapt to new data. The improved algorithm will enhance the speed and the ability to automatically trade assets in a highly dynamic environment. 
 
-This report has been structured as follows:
-* **The Baseline** includes the existing trading algorithm as well as the trading signal used. 
+The report has been structured as follows:
+* **The Baseline** includes the existing trading algorithm and the signal used. 
 * **Tune the Baseline** discusses two enhancements considered: adjusting the size of the training dataset (and hence testing dataset), and adjusting the Simple Moving Averages (SMAs) input features. 
 * **New Machine Learning Classifier** outlines an alternate machine learning model using a new classifier, the random forest classifier.
 
- To evaluate the merits of each improvement, we compare the cumulative products of the strategy returns on an MSCI-based emerging markets ETF over the investment window starting from Jan 2015 to Jan 2021.
+ To evaluate the merits of each change, we compare the cumulative products of the strategy returns on an MSCI-based emerging markets ETF over the investment window starting from Jan 2015 to Jan 2021.
 
 
 ### The Baseline
