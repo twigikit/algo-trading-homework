@@ -62,9 +62,16 @@ From a technical perspective, the performance of this improved model is also pre
 The cumulative strategy returns is improved by 55% as compared to the baseline. 
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
 
-
 ### New Machine Learning Classifier
-In this section, we explore a second machine learning model. 
+A second machine learning model which is built on the random forest classifer learning model is considered. 
+
+Using the same set of parameters as per the baseline model, the technical performance of this random foreset classifier model is:
+<img src="./diagram/nc_classification_rpt.png" alt="drawing" width="300" height = "120"/> <br>
+* An overall accurary score of 52% (lower than to the baseline)
+* The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
+* The prediction on buy signal is reasonably acceptable with a precision score of 56% and recall score of 65%. 
+
+The cumulative strategy returns is 2% lower as compared to the baseline. 
 
 <img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
 
