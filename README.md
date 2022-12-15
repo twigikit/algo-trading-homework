@@ -13,7 +13,7 @@ This report has been structured as follows:
 ### The Baseline
 The current trading algorithm is built on a support vector classifier (SVC) learning model using trading signals predicted based on 4 consecutive prices short window SMAs and 100 consecutive prices long window SMAs. SVC learning model is fitted with 3-month training data. 
 
-From a technical perspective, 
+From a technical perspective, <br>
 <img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
 
 * The model has an overall accuracy score of 55% (perform marginally better than random guesses). 
