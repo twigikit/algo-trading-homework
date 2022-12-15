@@ -90,7 +90,7 @@ The tuned trading algorithm based on a SVC learning model using 4 months trainin
 <img src="./diagram/combined_plot.png" alt="drawing" width="550" height = "320"/>
  
 ### Conclusion
-All models considered have low accuracy score and no better than random guesses.To improve the accuracy of the models, one may consider increasing the number of features used to predict trading signals.
+All models considered have low accuracy score and no better than random guesses. To improve the accuracy of the models, one may consider increasing the number of features used to predict the trading signals.
 
 The tuned trading algorithm is preferred to the current algorithms until the next improved model is identified. 
 
