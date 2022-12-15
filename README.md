@@ -84,12 +84,13 @@ The graph below compares the cumulative return from the machine learning model u
 
 <img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
 
-
-### Conclusion
+### Overall results
+The tuned trading algorithm based on a SVC learning model using the following parameters: 4 months training dataset, 80 prices short window SMAs and 200 prices long window SMAs is preferred. This model gives the highest cumulative return for the investment window from 2015 up to 22 Jan 2022.
 
 <img src="./diagram/combined_plot.png" alt="drawing" width="550" height = "320"/>
  
- The tuned trading algorithm based on a SVC learning model using the following parameters: 4 months training dataset, 80 prices short window SMAs and 200 prices long window SMAs gives the highest cumulative return for the investment window from 2015 up to 22 Jan 2022. 
+### Conclusion
+All models considered have low accuracy score and no better than random guesses.To improve the accuracy of the models, one may consider increasing the number of features used to predict trading signals. 
 
 
 
