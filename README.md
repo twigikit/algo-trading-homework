@@ -17,7 +17,7 @@ The performance of the current model are as follows:, <br>
 
 <img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
 
-* The baseline model has an overall accuracy score of 55% (marginally better than random guesses). 
+* The baseline model has an overall accuracy score of 55%. 
 * The prediction on sell signal is poor given a precision score of 43% and recall score of 4%. 
 * The prediction on buy signal is average with an precision score of 56% and recall score of 96%.
 * The cumulative return up to 22 Jan 2022 is **62%**. 
