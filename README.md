@@ -5,7 +5,7 @@ The exericse seeks to improve the existing algorithmic trading systems by enhanc
 This report has been structured as follows:
 * **The Baseline** includes the existing trading algorithm as well as the trading signal used. 
 * **Tune the Baseline** discusses two enhancements considered: adjusting the size of the training dataset (and hence testing dataset), and adjusting the Simple Moving Averages (SMAs) input features. 
-* **New Machine Learning Classifier** outlines an alternate machine learning model using a new classifier, i.e. the Random Forest Classifier.
+* **New Machine Learning Classifier** outlines an alternate machine learning model using a new classifier, the random forest classifier.
 
  To evaluate the merits of each improvement, we compare the cumulative products of the strategy returns on an MSCI-based emerging markets ETF over the investment window starting from Jan 2015 to Jan 2021.
 
