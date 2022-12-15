@@ -20,7 +20,7 @@ The performance of the current model are as follows:, <br>
 * The model has an overall accuracy score of 55% (marginally better than random guesses). 
 * The prediction on sell signal is poor given a precision score of 43% and recall score of 4%. 
 * The prediction on buy signal is average with an precision score of 56% and recall score of 96%.
-* The cumulative returns up to 22 Jan 2022 is **62%**. 
+* The cumulative return up to 22 Jan 2022 is **62%**. 
 
 The graph below shows the actual returns and strategy returns (generated from the SVC model).
 
@@ -65,7 +65,7 @@ The performance of this improved model is as follows: <br>
 * This model has an overall accurary score of 54% (relatively similar to the baseline)
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score.
 * The prediction on buy signal is reasonably acceptable with a precision score of 57% and recall score of 73%. 
-* The cumulative strategy returns is improved by 55% as compared to the baseline. 
+* The cumulative strategy return is improved by 55% as compared to the baseline. 
 
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
 
@@ -77,14 +77,12 @@ A second machine learning model which is built on random forest classifer is con
 * An overall accurary score of 52% (lower than to the baseline)
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
 * The prediction on buy signal is reasonably acceptable with a precision score of 56% and recall score of 65%. 
+* The new model performed slightly worse than the baseline model. New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022.
+*  The new model performed worse than the tuned trading algorithm. New model provided 58% lower return than the tuned trading algorithm for the same investment window up to 22/01/2022.
 
 The graph below compares the cumulative return from the machine learning model using a new classifer to the baseline performance.<br>
 
 <img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
-
-The new model performed slightly worse than the baseline model. New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022.
-
- The new model performed worse than the tuned trading algorithm. New model provided 58% lower return than the tuned trading algorithm for the same investment window up to 22/01/2022.
 
 
 ### Conclusion
