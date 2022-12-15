@@ -14,9 +14,8 @@ The report has been structured as follows:
 The current trading algorithm is built on a support vector classifier (SVC) learning model using trading signals predicted from two SMAs: 4 consecutive prices short window SMAs and 100 consecutive prices long window SMAs. SVC learning model is fitted with 3-month training data. 
 
 The performance of the current model are as follows:, <br>
-<figure>
+
 <img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
-</figure>
 
 * The model has an overall accuracy score of 55% (marginally better than random guesses). 
 * The prediction on sell signal is poor given a precision score of 43% and recall score of 4%. 
@@ -45,10 +44,8 @@ The default size of the training dataset is 3 months. Decreasing the training wi
 **2. Adjusting the Simple Moving Averages (SMA) input features** <br>
 The baseline model uses two SMAs: 4 prices SMAs and 100 prices SMAs. The table below shows the strategy returns using different pairs of short window and long window SMAs.  
 
-
 <img src="./diagram/tbl_diff_window.png" alt="drawing" width="280" height = "180"/> <br>
 <span style ="font-size:12px;"> Note: Red box = baseline performance </span>
-
 
 Using the default size of training dataset, increasing and/or decreasing the SMA input features does not necessarily improve the strategy returns.
 
@@ -63,9 +60,7 @@ The set parameter that best improved the returns are:
 * long window SMAs = 200 prices
 
 The performance of this improved model is as follows: <br>
-<figure>
 <img src="./diagram/best_improved_classification_rpt.png" alt="drawing" width="300" height = "120"/>
-</figure>
 
 * This model has an overall accurary score of 54% (relatively similar to the baseline)
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score.
@@ -76,9 +71,8 @@ The performance of this improved model is as follows: <br>
 
 ### New Machine Learning Classifier
 A second machine learning model which is built on random forest classifer is considered. Using the same set of parameters as per the baseline model, the performance of this random forest classifier model is as follows: <br>
-<figure>
+
 <img src="./diagram/nc_classification_rpt.png" alt="drawing" width="300" height = "120"/>
-</figure>
 
 * An overall accurary score of 52% (lower than to the baseline)
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
