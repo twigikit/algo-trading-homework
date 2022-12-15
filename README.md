@@ -52,7 +52,7 @@ Using the default size of training dataset, increasing and/or decreasing the SMA
 
 **3. The Best Improved Trading Algorithm**<br>
 The table below summarises the three set of parameters that generate the top three strategy return using the SVC model. <br>
-<img src="./diagram/top3_improved.png" alt="drawing" width="300" height = "130"/> <br>
+<img src="./diagram/top3_improved.png" alt="drawing" width="300" height = "110"/> <br>
 
 The set parameter that best improved the returns are:
 * size of training dataset = 4 months
