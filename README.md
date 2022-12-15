@@ -4,14 +4,14 @@ The exericse seeks to improve the existing algorithmic trading systems by enhanc
 
 This report has been structured as follows:
 * **The Baseline** includes the existing trading algorithm as well as the trading signal used. 
-* **Tune the Baseline** discusses the two enhancements considered: adjusting the size of the training dataset (and hence testing dataset), and adjusting the Simple Moving Averages (SMAs) input features. 
-* **New Machine Learning Classifier.** outlines an alternate machine learning model using a new classifier, i.e. the Voting Classifier.
+* **Tune the Baseline** discusses two enhancements considered: adjusting the size of the training dataset (and hence testing dataset), and adjusting the Simple Moving Averages (SMAs) input features. 
+* **New Machine Learning Classifier** outlines an alternate machine learning model using a new classifier, i.e. the Random Forest Classifier.
 
  To evaluate the merits of each improvement, we compare the cumulative products of the strategy returns on an MSCI-based emerging markets ETF over the investment window starting from Jan 2015 to Jan 2021.
 
 
 ### The Baseline
-The current trading algorithm is built on a support vector classifier (SVC) learning model using trading signals predicted based on 4 consecutive prices SMAs and 100 consecutive prices SMAs. SVC learning model is fitted with 3-month training data. 
+The current trading algorithm is built on a support vector classifier (SVC) learning model using trading signals predicted based on 4 consecutive prices short window SMAs and 100 consecutive prices long window SMAs. SVC learning model is fitted with 3-month training data. 
 
 From a technical perspective, 
 <img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
