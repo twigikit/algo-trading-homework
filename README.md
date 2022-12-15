@@ -16,18 +16,33 @@ The current trading algorithm is built on a support vector classifier (SVC) lear
 
 At 22 Jan 2022, the strategy provided a 62% cumulative return.
 
+<img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
+
 ### Tune the Baseline
 **1. Adjusting the size of the training dataset** <br>
 Using different size of training dataset could affect how well and effective the SVC model learn. The bar graph below shows the cumulative return using different size of the training dataset.
 
 <img src="./diagram/diff_training_size.png" alt="drawing" width="400" height = "250"/>
 
-Baseline (or default) training size is 3 months. Decreasing the training window does not generate a better result. Increasing the training window could improve the trading algorithm. Based on the sample used, using 7 months data to train the model generated the highest cumulative return. 
+Baseline size of the training dataset is 3 months. Decreasing the training window does not generate a better result. Increasing the training window could improve the trading algorithm. Based on the sample used, using 7 months data to train the model generated the highest cumulative return. 
 
-**2. Adjusting the Simple Moving Averages (SMA) input features**
+**2. Adjusting the Simple Moving Averages (SMA) input features** <br>
+The baseline model uses two sets of features: 4 prices SMAs and 100 prices SMAs. The table below shows the strategy returns using different combination set of short window and long window SMAs.  
 
+<img src="./diagram/tbl_diff_window.png" alt="drawing" width="280" height = "180"/> <br>
+<span style ="font-size:12px;"> Note: Red box = baseline performance </span>
 
-**3. The Best Improved Trading Algorithm**
+Using the same dataset including same size of trainind dataset, increasing and/or decreasing the SMA input features does not necessarily improve the strategy returns.
+
+**3. The Best Improved Trading Algorithm**<br>
+The table below summarises the three set of parameters that generate the top three strategy return using the SVC model. <br>
+<img src="./diagram/top3_improved.png" alt="drawing" width="300" height = "130"/> <br>
+
+The set parameter that best improved the returns are:
+* size of training dataset = 4 months
+* short window SMAs = 80 prices
+* long window SMAs = 200 prices <br>
+Cumulative strategy returns is improved by 55% compared to baseline. 
 
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
 
