@@ -31,7 +31,11 @@ Using different size of training dataset could affect how well and effective the
 
 <img src="./diagram/diff_training_size.png" alt="drawing" width="400" height = "250"/>
 
-Baseline size of the training dataset is 3 months. Decreasing the training window does not generate a better result. Increasing the training window could improve the trading algorithm. Based on the sample used, using 7 months data to train the model generated the highest cumulative return. 
+Baseline size of the training dataset is 3 months. Decreasing the training window does not generate a better result. There are few challenges arising from small training window: <br>
+* Training dataset may only captures one class of signal. Having single class of signal in the training dataset makes it impossible to train any machine model learning.
+* Small training dataset may captures significant one-off event that could skew the modelling and machine learning. 
+
+ Increasing the training window could improve the trading algorithm. Based on the sample used, using 7 months data to train the model generated the highest cumulative return. 
 
 
 **2. Adjusting the Simple Moving Averages (SMA) input features** <br>
@@ -63,22 +67,25 @@ The cumulative strategy returns is improved by 55% as compared to the baseline.
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
 
 ### New Machine Learning Classifier
-A second machine learning model which is built on the random forest classifer learning model is considered. 
-
-Using the same set of parameters as per the baseline model, the technical performance of this random foreset classifier model is:
+A second machine learning model which is built on random forest classifer is considered. Using the same set of parameters as per the baseline model, the technical performance of this random forest classifier model is as follows: <br>
 <img src="./diagram/nc_classification_rpt.png" alt="drawing" width="300" height = "120"/> <br>
 * An overall accurary score of 52% (lower than to the baseline)
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
 * The prediction on buy signal is reasonably acceptable with a precision score of 56% and recall score of 65%. 
 
-The cumulative strategy returns is 2% lower as compared to the baseline. 
-
+The graph below compares the cumulative return from the machine learning model using a new classifer to the baseline performance.
 <img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
+
+The new model performed slightly worse than the baseline model. New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022.
+
+ The new model performed worse than the tuned trading algorithm. New model provided 58% lower return than the tuned trading algorithm for the same investment window up to 22/01/2022.
 
 
 ### Conclusion
 
 <img src="./diagram/combined_plot.png" alt="drawing" width="550" height = "320"/>
+ 
+ The tuned trading algorithm based on a SVC learning model using the following parameters: 4 months worth of training dataset, 80 prices short window SMAs and 200 prices long window SMAs gives the highest cumulative return for the investment window from 2015 up to 22 Jan 2022. 
 
 
 
