@@ -27,7 +27,7 @@ At 22 Jan 2022, the strategy provided a **62%** cumulative return. The graph bel
 
 ### Tune the Baseline
 **1. Adjusting the size of the training dataset** <br>
-Using different size of training dataset could affect how well and effective the SVC model learn. The bar graph below shows the cumulative return using different size of the training dataset.
+Using different size of training dataset could affect how well and effective the SVC model learn. The bar graph below shows the cumulative return using different size of the training dataset. <br>
 
 <img src="./diagram/diff_training_size.png" alt="drawing" width="400" height = "250"/>
 
@@ -56,7 +56,7 @@ The set parameter that best improved the returns are:
 * short window SMAs = 80 prices
 * long window SMAs = 200 prices
 
-From a technical perspective, the performance of this improved model is also preferred.
+From a technical perspective, the performance of this improved model is also preferred. <br>
 
 <img src="./diagram/best_improved_classification_rpt.png" alt="drawing" width="300" height = "120"/> <br>
 * An overall accurary score of 54% (relatively similar to the baseline)
@@ -73,7 +73,7 @@ A second machine learning model which is built on random forest classifer is con
 * The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
 * The prediction on buy signal is reasonably acceptable with a precision score of 56% and recall score of 65%. 
 
-The graph below compares the cumulative return from the machine learning model using a new classifer to the baseline performance.
+The graph below compares the cumulative return from the machine learning model using a new classifer to the baseline performance.<br>
 <img src="./diagram/new_classifier.png" alt="drawing" width="550" height = "320"/>
 
 The new model performed slightly worse than the baseline model. New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022.
