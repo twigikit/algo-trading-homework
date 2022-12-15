@@ -17,7 +17,7 @@ The performance of the current model are as follows:, <br>
 
 <img src="./diagram/baseline_classification_rpt.png" alt="drawing" width="300" height = "120"/>
 
-* The model has an overall accuracy score of 55% (marginally better than random guesses). 
+* The baseline model has an overall accuracy score of 55% (marginally better than random guesses). 
 * The prediction on sell signal is poor given a precision score of 43% and recall score of 4%. 
 * The prediction on buy signal is average with an precision score of 56% and recall score of 96%.
 * The cumulative return up to 22 Jan 2022 is **62%**. 
@@ -62,10 +62,10 @@ The set parameter that best improved the returns are:
 The performance of this improved model is as follows: <br>
 <img src="./diagram/best_improved_classification_rpt.png" alt="drawing" width="300" height = "120"/>
 
-* This model has an overall accurary score of 54% (relatively similar to the baseline)
-* The prediction on sell signal has a slightly higher precision score but a significantly improved recall score.
+* The improved model has an overall accurary score of 54% (similar to the baseline).
+* The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
 * The prediction on buy signal is reasonably acceptable with a precision score of 57% and recall score of 73%. 
-* The cumulative strategy return is improved by 55% as compared to the baseline. 
+* The cumulative strategy return is improved by 55% as compared to the baseline performance.
 
 <img src="./diagram/best_improved.png" alt="drawing" width="550" height = "320"/>
 
@@ -74,11 +74,11 @@ A second machine learning model which is built on random forest classifer is con
 
 <img src="./diagram/nc_classification_rpt.png" alt="drawing" width="300" height = "120"/>
 
-* An overall accurary score of 52% (lower than to the baseline)
-* The prediction on sell signal has a slightly higher precision score but a significantly improved recall score as compared to the baseline performance.
+* The new model has an overall accurary score of 52% (lower than the baseline).
+* The prediction on sell signal is better with a slightly higher precision score and a significantly improved recall score as compared to the baseline performance.
 * The prediction on buy signal is reasonably acceptable with a precision score of 56% and recall score of 65%. 
-* The new model performed slightly worse than the baseline model. New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022.
-*  The new model performed worse than the tuned trading algorithm. New model provided 58% lower return than the tuned trading algorithm for the same investment window up to 22/01/2022.
+* New model provided 2% lower cumulative return than the baseline for the same investment window up to 22/01/2022. The new model performed worse than the baseline model.
+* New model provided 58% lower return than the tuned trading algorithm for the same investment window up to 22/01/2022. The new model performed worse than the tuned trading algorithm.
 
 The graph below compares the cumulative return from the machine learning model using a new classifer to the baseline performance.<br>
 
